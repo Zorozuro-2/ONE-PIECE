@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<relative-layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080B10"
+    android:padding="12dp">
+
+    <!-- Outer Gold Pirate Border Effect -->
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        class="android.view.View" />
+
+    <linear-layout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <linear-layout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <!-- Title: ONE PIECE -->
+            <text-view
+                android:id="@+id/widget_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="★ ONE PIECE LEDGER"
+                android:textColor="#FBBF24"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Daily Streak -->
+            <text-view
+                android:id="@+id/widget_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STREAKS: 20🔥"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </linear-layout>
+
+        <!-- Pirate Mascot Callout -->
+        <text-view
+            android:id="@+id/widget_mascot_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Oi Nakama! Complete your Haki training and hoist the sails today!”"
+            android:textColor="#94A3B8"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Status Information -->
+        <linear-layout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <text-view
+                android:id="@+id/widget_progress_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voyage Complete: 19.0 / 100YRS (19%)"
+                android:textColor="#94A3B8"
+                android:textSize="9sp" />
+
+            <text-view
+                android:id="@+id/widget_task_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/4 DONE"
+                android:textColor="#4ADE80"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </linear-layout>
+
+    </linear-layout>
+
+</relative-layout>
